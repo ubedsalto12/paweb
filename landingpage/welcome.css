@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+* {
+    font-family: 'Aref Ruqaa', sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .layar-dalam {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .full-screen {
+    width: 100%;
+  }
+
+  /* navigation */
+  nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+
+  nav .white {
+    color: white;
+    background-color: transparent;
+  }
+
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  nav .logo a {
+    font-size: 25px;
+    text-decoration: none;
+    width: 120px;
+  }
+  
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .menu ul li input {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    color: #3f3f3f;
+    transition: .5s;
+  }
+  
+  /* header */
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+  }
+
+  header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 45%;
+  }
+
+  header .intro h3 {
+    font-size: 25px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .intro p {
+    font-size: 20px;
+  }
+
+  .intro .intro-btn {
+    color: white;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .intro .intro-btn :hover {
+    background: #3f3f3f;
+    color: black;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+  }
+
+  .menu-btn {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+
+  .menu-btn .garis {
+    height: 3px;
+    background-color: #fff;
+  }
+
+  section {
+    padding: 50px 0px 50px 0px;
+  }
+
+  section h3 {
+    font-size: 30px;
+  }
+
+  section h3::after {
+    content: "";
+    border-bottom: 5px solid #3f3f3f;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  #aboutus,
+  #max {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  section p.ringkasan {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3f3f3f;
+  }
+
+  section .konten-isi p {
+    font-size: 18px;
+    font-style: normal;
+  }
+
+  nav.white {
+    background-color: black;
+  }
+
+  nav.white .menu-btn .garis {
+    background-color: white;
+  }
+
+  nav.white .logo a {
+    color: white;
+  }
+
+  nav.white ul li a {
+    color: white;
+  }
+
+  nav .logo .black {
+    display: none;
+  }
+
+  section.abuabu {
+    background-color: #f5f6f6;
+  }
+
+  .abuabu div i {
+    margin-left: 45px;
+    font-size: 1000%;
+  }
+
+  .history,
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .history h6,
+  .profile h6 {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .history div,
+  .profile div {
+    text-align: center;
+    width: 26%;
+  }
+
+  #history {
+    margin-bottom: 100px;
+  }
+
+  section.quote {
+    background: url("../pa web/pict/art4.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    padding: 100px;
+  }
+
+  .profile img {
+    margin-top: 20px;
+    width: 80%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+  }
+
+  #preview .layar-dalam {
+    text-align: center;
+  }
+
+  .slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    padding-left: 20%;
+  }
+
+  .images {
+    display: flex;
+    width: 100%;
+  }
+
+  .images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+  }
+
+  .images input {
+    display: none;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+
+  .dots label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid black 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+
+  .dots label:hover {background: #3f3f3f;}
+  #img1:checked ~ .m1 {
+    margin-left: 0;
+  }
+
+  #img2:checked ~ .m2 {
+    margin-left: -100%;
+  }
+
+  #img3:checked ~ .m3 {
+    margin-left: -200%;
+  }
+
+  #img4:checked ~ .m4 {
+    margin-left: -300%;
+  }
+
+  /* footer */
+  footer {
+    padding: 15px 0px 20px 0px;
+    background-color: black;
+    color: #fff;
+  }
+
+  footer .layar-dalam {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .layar-dalam div {
+    margin-right: 50px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  footer .layar-dalam h5 {
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .social-media a {
+    position: relative;
+    align-content: center;
+    margin-right: 60px;
+    color: white;
+    font-size: 50px;
+    transition: 0.3s;
+    transition-property: transform;
+  }
+
+  .social-media a i {
+    font-size: 60%;
+    padding-left: 250%;
+  }
+
+  .social-media a:hover {
+    transform: scale(1.5);
+  }
+
+  footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      text-transform: uppercase;
+      background-color: white;
+      line-height: 40px;
+    }
+
+    nav .menu ul li a {
+      color: black;
+    }
+
+    .menu-btn {
+      margin-top: -6px;
+      display: flex;
+    }
+
+    .history {
+      display: block;
+    }
+
+    .history div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0%;
+    }
+  
+    .images {
+      display: flex;
+      width: 100%;
+    }
+  
+    .images img {
+      height: 400px;
+      width: 100%;
+      transition: all 0.15s ease;
+    }  
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .social-media a {
+        position: relative;
+        color: var(--secondary-color);
+        font-size: 50px;
+        transition: 0.3s;
+        transition-property: transform;
+    }
+    
+    .social-media a {
+        margin-right: 60px;
+    }
+    
+    .social-media a:hover {
+        transform: scale(1.5);
+    }
+  }
