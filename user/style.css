@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Dancing+Script&family=Nunito+Sans:wght@600&family=Prata&family=Rubik+Dirt&display=swap');
+* {
+    font-family: 'Aref Ruqaa Ink', serif;
+    line-height: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+img{
+    width:100%;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.fullscreen {
+    width: 100%;
+
+}
+.logo a{
+    font-size: 25px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    color: black;
+}
+.navbar {
+    float: right;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: fixed;
+    line-height: 60px;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid;
+    z-index: 100;
+}
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+nav .logo a {
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 120px;
+}
+nav .navbar{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .navbar ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul li a {
+    color: rgb(216, 210, 210);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+nav ul li a .container-icons  {
+    padding: 25px 5px;
+}
+nav ul li a:hover {
+    color: black;
+}
+nav ul li a .material-icons{
+    padding-bottom: 10px;
+    position: relative;
+}
+.home {
+    background: url(backgroundhome.jpg);
+    min-height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .6);
+}
+.home p{
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+}
+.collection .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.collection .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    flex:1 1 20rem;
+    height: 25rem;
+    position: relative;
+}
+.collection .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.collection .box-container .box .content{
+    position: absolute;
+    top:-100%; 
+    left:0;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    padding:20px 5px;
+    padding-top: 5rem;
+}  
+.collection .box-container .box:hover .content{
+    top:0;
+    background:rgba(0,0,0,.7);
+}  
+.collection .box-container .box .content h3{
+    font-size: 20px;
+    color:white;
+}
+.collection .box-container .box .content .btn{
+    font-size: 10px;
+    color:white;
+    text-decoration: underline;
+}
+.collection .box-container .box .content p{
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+}
+.detail img {
+    display: flex;
+    padding: 80px 10px;
+}
+.detail-container .detail-content {
+    text-align: center;
+    border-color: white;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+    background-color: white;
+    padding-bottom: 80px;
+    position: relative;
+}
+.detail-container .detail-content h3{
+    font-size: 20px;
+    padding: 30px 16px;
+}
+.detail-container .detail-content p {
+    text-align: center;
+}
+.detail-container .detail-content .harga{
+    padding: 10px 16px;
+}
+.detail-container .detail-content .btn-container {
+    padding-top: 10px;
+}
+.detail-container .detail-content .btn-container a {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    display: flexbox;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.detail-container .detail-content .btn-container a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.tombol-nav {
+    position: absolute;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-nav .garis {
+    height: 3px;
+    background-color: #686868;
+}
+section {
+    padding: 50px 0px 50px 0px;
+}
+section h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 100;
+}
+section .container button {
+    border: none;
+    cursor: pointer;
+}
+section h3 {
+    font-size: 30px;
+}
+section h3::after {
+    content: ""; 
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#aboutus {
+    text-align: center;
+}
+section p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+section .abuabu {
+    background-color: #f5f6f6;
+}
+.container-product {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container-product img {
+    width: 90%;
+}
+.container-product p {
+    font-style: italic;
+    font-size: 12px;
+}
+.aboutus{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.aboutus p.ringkasan {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3f3f3f;
+    padding: 10px 16px;
+}
+
+.aboutus .konten-isi p {
+    font-size: 18px;
+    font-style: normal;
+}
+footer {
+    padding: 15px 0px 20px 0px;
+    background-color: black;
+    color: #fff;
+}
+
+footer .layar-dalam {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .layar-dalam div {
+    margin-right: 50px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  footer .layar-dalam h5 {
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .social-media a {
+    position: relative;
+    align-content: center;
+    margin-right: 60px;
+    color: white;
+    font-size: 50px;
+    transition: 0.3s;
+    transition-property: transform;
+  }
+
+  .social-media a i {
+    font-size: 60%;
+    padding-left: 250%;
+  }
+
+  .social-media a:hover {
+    transform: scale(1.5);
+  }
+
+  footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+  }
+@media screen and (max-width: 991.98px){
+    .container{
+        width: 90%;
+    }
+    nav .navbar ul {
+        display: none;
+        margin-top: 62px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .navbar ul li {
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #686868;
+        line-height: 40px;
+        text-align: center;
+    }
+    nav .navbar ul li a {
+        padding: 10px 250px;
+    }
+    .tombol-nav {
+        display: flex;
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .social-media a {
+        position: relative;
+        color: var(--secondary-color);
+        font-size: 50px;
+        transition: 0.3s;
+        transition-property: transform;
+    }
+    
+    .social-media a {
+        margin-right: 60px;
+    }
+    
+    .social-media a:hover {
+        transform: scale(1.5);
+    }
+}
+/* .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+} */
